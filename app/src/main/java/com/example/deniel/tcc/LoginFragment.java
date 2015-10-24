@@ -41,7 +41,7 @@ public class LoginFragment extends android.support.v4.app.Fragment implements Vi
         String login = editLogin.getText().toString();
         String senha = editSenha.getText().toString();
 
-        if(login.equals(this.login) || senha.equals(this.senha)) {
+        if(login.equals(this.login) && senha.equals(this.senha)) {
             //chamar busca
             fragmentManager.beginTransaction()
                     .replace(R.id.container, new BuscaFragment())
