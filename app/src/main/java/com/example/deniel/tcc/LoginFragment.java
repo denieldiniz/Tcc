@@ -1,7 +1,6 @@
 package com.example.deniel.tcc;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,6 @@ public class LoginFragment extends android.support.v4.app.Fragment implements Vi
 
     EditText editLogin;
     EditText editSenha;
-    FragmentManager fragmentManager = getFragmentManager();
     String login = "user";
     String senha = "pass";
     int erro = R.string.erro;
@@ -43,7 +41,7 @@ public class LoginFragment extends android.support.v4.app.Fragment implements Vi
 
         if(login.equals(this.login) && senha.equals(this.senha)) {
             //chamar busca
-            fragmentManager.beginTransaction()
+            getActivity().getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container, new BuscaFragment())
                     .addToBackStack("BuscaFragment").commit();
         } else {
