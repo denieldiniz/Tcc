@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:id="@+id/edit_busca"
-            android:hint="Procurar Cidade"
+            android:hint="@string/hint_edittext_procurar"
             android:layout_alignBottom="@+id/procurar"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
