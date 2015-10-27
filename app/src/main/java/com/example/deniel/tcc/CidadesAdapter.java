@@ -12,7 +12,8 @@ public class CidadesAdapter extends ArrayAdapter <Cidade> {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        //super.onCreate(savedInstanceState);  //<<  estava no codigo e deu erro com o super
+        onCreate(savedInstanceState);
     }
 
 }
