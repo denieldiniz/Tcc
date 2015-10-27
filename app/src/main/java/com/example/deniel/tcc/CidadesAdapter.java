@@ -1,7 +1,6 @@
 package com.example.deniel.tcc;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.widget.ArrayAdapter;
 
 public class CidadesAdapter extends ArrayAdapter <Cidade> {
@@ -10,10 +9,10 @@ public class CidadesAdapter extends ArrayAdapter <Cidade> {
         super(context, resource);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        //super.onCreate(savedInstanceState);  //<<  estava no codigo e deu erro com o super
-        onCreate(savedInstanceState);
-    }
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        //super.onCreate(savedInstanceState);  //<<  estava no codigo e deu erro com o super
+//        onCreate(savedInstanceState);
+//    }
 
 }
