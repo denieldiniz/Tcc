@@ -1,12 +1,18 @@
 package com.example.deniel.tcc;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 
-public class CidadesAdapter extends AppCompatActivity {
+public class CidadesAdapter extends ArrayAdapter <Cidade> {
+
+    public CidadesAdapter(Context context, int resource) {
+        super(context, resource);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
 }
