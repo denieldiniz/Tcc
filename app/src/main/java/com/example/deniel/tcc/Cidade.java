@@ -9,11 +9,11 @@ public class Cidade {
     String nome;
     int bandeira;
 
-    public cidade(){
+    public Cidade() {
         //construtor limpo nao sei pra que.
     }
 
-    public cidade(String nome, int bandeira){
+    public Cidade(String nome, int bandeira) {
         this.nome = nome;
         this.bandeira = bandeira;
     }
